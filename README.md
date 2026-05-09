@@ -1,17 +1,47 @@
-# test_flutter
+NarynDrive
+NarynDrive is a peer-to-peer rideshare and delivery platform designed specifically for Naryn, Kyrgyzstan. The project aims to digitalize local transport and logistics by providing real-time tracking and monitoring capabilities.
 
-A new Flutter project.
+🛠 Tech Stack
+Frontend: Flutter (Dart)
 
-## Getting Started
+Backend: Java with Spring Boot
 
-This project is a starting point for a Flutter application.
+Database: PostgreSQL & Dockerized environments
 
-A few resources to get you started if this is your first Flutter project:
+APIs: Google Maps SDK for Android
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Communication: STOMP WebSockets for live tracking
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🚀 Current Progress
+The mobile development phase has successfully reached the following milestones:
+
+Environment Configuration: Fully established the Flutter development environment, including Android SDK toolchain integration and Developer Mode permissions for Windows symlink support.
+
+Maps Integration: Successfully integrated the google_maps_flutter package and configured the Google Cloud Console with secure API keys and SHA-1 fingerprints.
+
+Live Rendering: The application successfully launches on an Android Emulator, rendering a high-fidelity map centered on Naryn City (41.4285, 75.9912).
+
+Backend Foundation: The Spring Boot backend is already equipped with STOMP WebSocket functionality to handle future live-tracking data streams.
+
+📦 Prerequisites & Setup
+Flutter SDK: Ensure Flutter is installed and added to your system PATH.
+
+Android SDK: Android Studio must be installed to provide the necessary build tools and emulators.
+
+API Key: A valid Google Maps API key must be placed in android/app/src/main/AndroidManifest.xml.
+
+Bash
+# Clean the project and fetch dependencies
+flutter clean
+flutter pub get
+
+# Run the application
+flutter run
+🗺 Roadmap
+[ ] User Location: Implement the geolocator package to display the user's live position on the map.
+
+[ ] Live Markers: Integrate backend WebSocket data to display real-time driver and delivery vehicle positions as markers.
+
+[ ] UI Overlay: Build the cross-platform mobile interface for ride requests and delivery tracking.
+
+[ ] Authentication: Link the mobile frontend with existing backend security protocols.
